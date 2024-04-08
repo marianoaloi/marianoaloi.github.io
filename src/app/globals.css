@@ -17,8 +17,13 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: black;
   background: white;
+}
+main {
+  height: 4vh;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 @layer utilities {

@@ -1,8 +1,10 @@
-import './footer.css'
+"use client"
+
+import { FooterPage } from './footer.styled'
 export const FooterPages = () => {
     return (
-        <footer>
-    <p>&copy; 2024 Mariano Aloi. All Rights Reserved.</p>
-  </footer>
+        <FooterPage>
+    &copy; 2024 Mariano Aloi. All Rights Reserved.
+  </FooterPage>
     )
 }
