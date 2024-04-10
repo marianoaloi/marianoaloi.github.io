@@ -42,14 +42,14 @@
      transform="translate(-2.6917761,-8.5851339)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:29.6698px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#eeb2f2;stroke-width:2.63055;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="font-style:normal;font-weight:normal;font-size:29.6698px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.63055;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        x="6.0714974"
        y="26.2185"
        id="text1"
        transform="scale(0.62422998,1.6019737)"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#ffffff;fill-opacity:1;stroke:#eeb2f2;stroke-width:2.63055;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.63055;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
          x="6.0714974"
          y="26.2185">Mariano Aloi</tspan></text>
   </g>
