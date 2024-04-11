@@ -1,10 +1,12 @@
+"use client"
+import { MaloiImg } from "./home.styled";
 
 
 export default function Home() {
   
   return (
     <main >
-      Maloi Portfolio C:\Users\maria\Documents\node\static.maloi.github\src\app\page.tsx
+      <MaloiImg src={"./trabalhador_arquiteto_clean_600.png"}  width={600} height={503} alt="Solution Architect smilly" />
     </main>
   );
 }
