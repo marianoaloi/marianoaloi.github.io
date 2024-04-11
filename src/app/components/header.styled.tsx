@@ -23,6 +23,10 @@ background-color: ${themeColor};
 align-items: center;
 width: 100%;
 height: 70px;
+
+background-image: url(/proto.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 `
 
 export const NavBarLink = styled(Button)<{ selectedlink?: string }>((props: any) => ({

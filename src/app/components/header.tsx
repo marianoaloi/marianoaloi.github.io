@@ -8,7 +8,6 @@ export const HeaderPages = () => {
     const pathname = usePathname()
   return (
     <HeaderPage>
-      <Logo src="/proto.svg" alt="logo" width={220} height={50} />
       <ToolbarSpacer /> 
       
     <NavBar>
