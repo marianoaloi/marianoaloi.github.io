@@ -1,19 +1,17 @@
 import { createReducer } from "@reduxjs/toolkit"
 import { choiceLanguage } from "./thunks"
-import { TFunction } from "i18next"
-import { useTranslation } from "react-i18next";
 
 export interface languageState {
-    filter: TFunction<[string, string], undefined> | undefined
+    lang: string
 }
 
 const initialState: languageState = {
-    filter: undefined
+    lang: 'eng'
 }
 
 export const languageReduce = createReducer(initialState, (builder) => {
     builder.addCase(choiceLanguage, (state, action) => ({
         ...state,
-        filter: action.payload
+        lang: action.payload
     }))
 })

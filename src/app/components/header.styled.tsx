@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const themeColor = "#601165"
 
-const breakpointsWidth = {
+export const breakpointsWidth = {
     desktop: '768px',
     tablet: '1024px', // Optional for targeting tablets
 };

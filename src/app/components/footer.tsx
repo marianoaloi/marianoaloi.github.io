@@ -9,14 +9,12 @@ export const FooterPages = () => {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation(['home', 'main']);
 
-  useEffect(() => {
-    dispatch(choiceLanguage(t))
-  }, [dispatch])
+
 
   const onClickLanguageChange = (e: any) => {
     const language = e.target.value;
     i18n.changeLanguage(language); //change the language
-    dispatch(choiceLanguage(t))
+    dispatch(choiceLanguage(e.target.value))
   }
 
   return (
@@ -25,12 +23,12 @@ export const FooterPages = () => {
         &copy; 2024 Mariano Aloi. All Rights Reserved.
 
       </FooterPage>
-
       <LanguageChoice onChange={onClickLanguageChange}>
         <option value='en'>🇺🇸️ English</option>
         <option value='pt'>🇧🇷️ Portuguese</option>
         <option value='it'>🇮🇹️ Italian</option>
       </LanguageChoice>
+
     </div>
   )
 }
