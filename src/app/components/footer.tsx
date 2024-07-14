@@ -18,7 +18,7 @@ export const FooterPages = () => {
   }
 
   return (
-    <div>
+    <footer>
       <FooterPage>
         &copy; 2024 Mariano Aloi. All Rights Reserved.
 
@@ -29,6 +29,6 @@ export const FooterPages = () => {
         <option value='it'>🇮🇹️ Italian</option>
       </LanguageChoice>
 
-    </div>
+    </footer>
   )
 }

@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 
 export const themeColor = "#601165"
+export const themeBackground = "#eff0f7"
 
 export const breakpointsWidth = {
     desktop: '768px',
