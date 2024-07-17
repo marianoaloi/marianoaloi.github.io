@@ -31,3 +31,9 @@ main {
     text-wrap: balance;
   }
 }
+section {
+  display: block;
+  position: unset;
+  height: 80vh;
+  margin-top: 10px;
+}

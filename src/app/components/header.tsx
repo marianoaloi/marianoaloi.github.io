@@ -18,9 +18,8 @@ export const HeaderPages = () => {
 
       <NavBar>
         <div>
-          <NavBarLink href="/" selectedlink={"/" == pathname ? 'true' : 'false'}>Home</NavBarLink>
-          <NavBarLink href="/about" selectedlink={"/about" == pathname ? 'true' : 'false'}>About Me</NavBarLink>
-          <NavBarLink href="/contact" selectedlink={"/contact" == pathname ? 'true' : 'false'}>Contact</NavBarLink>
+          <NavBarLink href="#about" selectedlink={"/about" == pathname ? 'true' : 'false'}>About Me</NavBarLink>
+          <NavBarLink href="#contact" selectedlink={"/contact" == pathname ? 'true' : 'false'}>Contact</NavBarLink>
         </div>
 
       </NavBar>

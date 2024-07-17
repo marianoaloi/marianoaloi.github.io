@@ -13,7 +13,7 @@ const About = () => {
     const { t, i18n } = useTranslation(['home', 'main']);
 
     return (
-        <main>
+        <>
             <div>
                 <ImageMaloi src={"./maloi.jpg"} width={120} height={120} alt="AI Maloi representation" />
 
@@ -29,7 +29,7 @@ const About = () => {
 
 
             </div>
-        </main>
+        </>
     )
 }
 
