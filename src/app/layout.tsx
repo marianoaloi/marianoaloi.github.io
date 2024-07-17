@@ -7,7 +7,7 @@ import { Providers } from "@/lib/providers";
 import Home from "./page";
 import About from "./about/page";
 import { ConstactContentt } from "./contact/contactCenter";
-import { Contact } from "./contact/page";
+import Contact from "./contact/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,11 +22,7 @@ export const metadata: Metadata = {
 
 
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
 
   return (
     <Providers>
@@ -42,9 +38,9 @@ export default function RootLayout({
 
             <About />
           </section>
-          <section id="experience">
+          {/* <section id="experience">
             I have experience
-          </section>
+          </section> */}
           <section id="contact">
             <ConstactContentt />
           </section>

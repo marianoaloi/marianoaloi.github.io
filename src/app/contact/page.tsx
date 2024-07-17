@@ -7,20 +7,23 @@ import { ConstactContentt } from './contactCenter';
 
 
 
-export const Contact = () => {
+const Contact = () => {
     const [clicked, setClicked] = useState<boolean>(false)
     function changeView(event: any): void {
         setClicked(!clicked)
     }
 
     return (
-
-        !clicked ? <CAllMe onClick={changeView}>📱️</CAllMe> :
+        <>
+            !clicked ? <CAllMe onClick={changeView}>📱️</CAllMe> :
             <>
                 <ContactScreen>
                     <ConstactContentt />
                 </ContactScreen>
                 <BlackScreen onClick={changeView} />
             </>
+        </>
     )
 }
+
+export default Contact

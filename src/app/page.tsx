@@ -5,7 +5,6 @@ import '@/app/i18n'
 import { selectLanguage, useSelector } from "@/lib/redux";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import About from "./about/page";
 import { CardExperience } from "./components/cardExperiene/cardExperience";
 import CallMergeIcon from '@mui/icons-material/CallMerge';
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
