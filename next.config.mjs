@@ -3,13 +3,13 @@ const nextConfig = {
 
   reactStrictMode: true,
   output: 'export',
-  distDir: 'out',
-  images: { unoptimized: true } ,
+  distDir: 'dist',
+  images: { unoptimized: true },
 
-    // i18n: {
-    //     locales: ['en-US', 'it', 'pt-BR'],
-    //     defaultLocale: 'en-US',
-    //   },
+  // i18n: {
+  //     locales: ['en-US', 'it', 'pt-BR'],
+  //     defaultLocale: 'en-US',
+  //   },
 
 };
 

@@ -15,13 +15,13 @@ const Contact = () => {
 
     return (
         <>
-            !clicked ? <CAllMe onClick={changeView}>📱️</CAllMe> :
-            <>
-                <ContactScreen>
-                    <ConstactContentt />
-                </ContactScreen>
-                <BlackScreen onClick={changeView} />
-            </>
+            {!clicked ? <CAllMe onClick={changeView}>📱️</CAllMe> :
+                <>
+                    <ContactScreen>
+                        <ConstactContentt />
+                    </ContactScreen>
+                    <BlackScreen onClick={changeView} />
+                </>}
         </>
     )
 }
