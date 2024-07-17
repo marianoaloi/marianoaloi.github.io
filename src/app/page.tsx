@@ -20,6 +20,10 @@ export default function Home() {
   useEffect(() => {
     i18n.changeLanguage(lang); //change the language
   }, [i18n, lang])
+  function jumpTo(destine: string) {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <MainComponent >
       <GradientBoard>
@@ -32,9 +36,9 @@ export default function Home() {
       {/* <TimeLine events={events}></TimeLine> */}
       <CardsExperienceContainer>
         <CardsExperience>
-          <CardExperience text={t("main.button1", { ns: ["home"] })} icon={<CastleIcon />} />
-          <CardExperience text={t("main.button2", { ns: ["home"] })} icon={<CallMergeIcon />} />
-          <CardExperience text={t("main.button3", { ns: ["home"] })} icon={<AlarmOnIcon />} />
+          <a href="#experience"><CardExperience text={t("main.button1", { ns: ["home"] })} icon={<CastleIcon />} /></a>
+          <a href="#experience"><CardExperience text={t("main.button2", { ns: ["home"] })} icon={<CallMergeIcon />} /></a>
+          <a href="#experience"><CardExperience text={t("main.button3", { ns: ["home"] })} icon={<AlarmOnIcon />} /></a>
         </CardsExperience>
       </CardsExperienceContainer>
 

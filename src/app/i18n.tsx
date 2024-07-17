@@ -1,3 +1,4 @@
+"use client"
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -8,6 +9,9 @@ import translationItalian from "./Translation/Italian/translation.json";
 
 
 import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "../../i18n.config";
+
+// import { cookies, headers } from "next/headers";
 
 //---Using different namespaces
 const resources = {
@@ -25,13 +29,30 @@ const resources = {
     },
 }
 
+
+
+let lang = window.navigator.language || "en"
+if (lang) {
+    lang = lang.substring(0, 2)
+    if (!['en',
+        'pt'
+        ,
+        'it'].includes(lang)) {
+        lang = navigator.languages.map(lg => lg.substring(0, 2)).find(lg => ['en',
+            'pt'
+            ,
+            'it'].includes(lg)) || "en"
+    }
+}
+
+console.log(lang, i18n.language, i18n.languages)
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         resources,
-        lng: "en", //default language
-        fallbackLng: "en",
+        lng: lang, //default language
+        fallbackLng: lang,
         interpolation: {
             // alwaysFormat: true,
             escapeValue: false, // This ensures React interprets HTML entities correctly

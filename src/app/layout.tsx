@@ -8,6 +8,8 @@ import Home from "./page";
 import About from "./about/page";
 import { ConstactContentt } from "./contact/contactCenter";
 import Contact from "./contact/page";
+import Experience from "./experience/page";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,18 +36,20 @@ export default function RootLayout() {
 
             <Home />
           </section>
-          <section id="about">
 
+          <section id="about">
             <About />
           </section>
-          {/* <section id="experience">
-            I have experience
-          </section> */}
+
+          <section id="experience">
+            <Experience />
+          </section>
           <section id="contact">
             <ConstactContentt />
           </section>
 
           <Contact />
+
           <FooterPages />
         </body>
       </html>

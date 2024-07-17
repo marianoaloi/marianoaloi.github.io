@@ -23,7 +23,7 @@ export const FooterPages = () => {
         &copy; 2024 Mariano Aloi. All Rights Reserved.
 
       </FooterPage>
-      <LanguageChoice onChange={onClickLanguageChange}>
+      <LanguageChoice value={i18n.language} onChange={onClickLanguageChange}>
         <option value='en'>🇺🇸️ English</option>
         <option value='pt'>🇧🇷️ Portuguese</option>
         <option value='it'>🇮🇹️ Italian</option>

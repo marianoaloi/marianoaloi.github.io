@@ -1,9 +1,7 @@
 "use client"
-import Image from "next/image"
 import { ImageMaloi, ParaText } from './about.styled';
 
 import '@/app/i18n'
-import { selectLanguage, useSelector } from "@/lib/redux";
 import { useTranslation } from "react-i18next";
 
 
