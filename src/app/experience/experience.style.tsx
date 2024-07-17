@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { TableCell } from "@mui/material"
+import { TableCell, TableCellProps } from "@mui/material"
 import { breakpointsWidth, tableHeadBackground } from "../components/header.styled"
 
 
@@ -8,9 +8,11 @@ export const ExperienceBox = styled.div`
 
 `
 
-export const CellExperience = styled(TableCell)(
-    ({ sizework }) => `
-    width:${sizework}vw;
+
+
+export const CellExperience = styled(TableCell)<{ sizework?: string }>(
+    (props: any) => `
+    width:${props.sizework}vw;
 
     background: ${tableHeadBackground};
     align-content: center;

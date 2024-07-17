@@ -5,11 +5,10 @@ import { HeaderPages } from "./components/header";
 import { FooterPages } from './components/footer';
 import { Providers } from "@/lib/providers";
 import Home from "./page";
-import About from "./about/page";
+import About from "./about/about";
 import { ConstactContentt } from "./contact/contactCenter";
-import Contact from "./contact/page";
-import Experience from "./experience/page";
-import { useEffect } from "react";
+import Contact from "./contact/contact";
+import Experience from "./experience/experience";
 
 const inter = Inter({ subsets: ["latin"] });
 

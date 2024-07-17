@@ -10,6 +10,7 @@ import translationItalian from "./Translation/Italian/translation.json";
 
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18n from "../../i18n.config";
+import { useState } from "react";
 
 // import { cookies, headers } from "next/headers";
 
@@ -29,23 +30,24 @@ const resources = {
     },
 }
 
+const lang = 'en'
 
+// const [lang,setLanguage] = useState('en')
 
-let lang = window.navigator.language || "en"
-if (lang) {
-    lang = lang.substring(0, 2)
-    if (!['en',
-        'pt'
-        ,
-        'it'].includes(lang)) {
-        lang = navigator.languages.map(lg => lg.substring(0, 2)).find(lg => ['en',
-            'pt'
-            ,
-            'it'].includes(lg)) || "en"
-    }
-}
+// let lang = navigator.language || "en"
+// if (lang) {
+//     lang = lang.substring(0, 2)
+//     if (!['en',
+//         'pt'
+//         ,
+//         'it'].includes(lang)) {
+//         lang = navigator.languages.map(lg => lg.substring(0, 2)).find(lg => ['en',
+//             'pt'
+//             ,
+//             'it'].includes(lg)) || "en"
+//     }
+// }
 
-console.log(lang, i18n.language, i18n.languages)
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
