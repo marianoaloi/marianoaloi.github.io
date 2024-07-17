@@ -3,6 +3,12 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 
 export const themeColor = "#601165"
+export const themeBackground = "#eff0f7"
+
+export const breakpointsWidth = {
+    desktop: '768px',
+    tablet: '1024px', // Optional for targeting tablets
+};
 
 export const NavBar = styled.nav`
 background-color: ${themeColor};
@@ -24,9 +30,18 @@ align-items: center;
 width: 100%;
 height: 70px;
 
-background-image: url(/proto.svg);
-    background-repeat: no-repeat;
-    background-position: left;
+
+background-image: url(/logoMini.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: 150px;
+
+@media (min-width: ${breakpointsWidth.desktop}) {
+    background-image: url(/logo.png);
+    background-size: 300px;
+  }
+
+
 `
 
 export const NavBarLink = styled(Button)<{ selectedlink?: string }>((props: any) => ({
